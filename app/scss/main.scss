@@ -1,10 +1,12 @@
-@import "vars";
+@import 'vars';
 @import 'fonts';
 @import 'libs';
 @import 'button';
 @import 'header';
 @import 'nav';
-@import "hero";
+@import 'hero';
+@import 'about';
+@import 'title';
 
 ::placeholder {
     color: #666;
@@ -55,7 +57,7 @@ ol {
 
 .clearfix {
     &:after {
-        content: '';
+        //content: '';
         display: table;
         clear: both;
     }
