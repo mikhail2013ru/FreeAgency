@@ -12,4 +12,10 @@
         font-size: 3rem;
         line-height: 1;
     }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 27px;
+        font-family: $ff-main-light;
+    }
 }
