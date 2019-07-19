@@ -1,5 +1,15 @@
+@import "vars";
+
 .hero {
     min-height: 59px;
     padding: 174px 0;
     text-align: center;
+    color: #fff;
+    background: #ccc url('../img/hero-bg.jpg') center/cover no-repeat;
+
+    &__about {
+        font-family: $ff-main-bold;
+        font-size: 3rem;
+        line-height: 1;
+    }
 }
