@@ -1,0 +1,7 @@
+.icon {
+    margin: auto auto 23px auto;
+}
+
+.icon-like {
+    @include sprite($like);
+}
