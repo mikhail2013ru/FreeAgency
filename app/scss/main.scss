@@ -1,12 +1,18 @@
-@import 'vars';
-@import 'fonts';
-@import 'libs';
-@import 'button';
-@import 'header';
-@import 'nav';
-@import 'hero';
-@import 'about';
-@import 'title';
+@import "global/mixins";
+@import "global/fonts";
+@import "global/vars";
+@import "global/libs";
+@import "global/sprite";
+@import "global/icons";
+
+@import "sections/hero";
+@import "sections/header";
+@import "sections/nav";
+@import "sections/title";
+@import "sections/about";
+@import "sections/button";
+@import "sections/approach";
+@import "sections/work";
 
 ::placeholder {
     color: #666;
@@ -57,56 +63,13 @@ ol {
 
 .clearfix {
     &:after {
-        //content: '';
+        content: '';
         display: table;
         clear: both;
     }
 }
-	
-
-// Custom Sass / Remove before use
 
 .container {
     max-width: 1024px;
     margin: auto;
 }
-		
-// 	margin: {
-//         left: auto;
-// 		right: auto;
-//     }
-		
-// }
-	
-
-// .img-responsive {
-//     display: block;
-// 	max-width: 100%;
-// 	height: auto;
-// }
-	
-
-// .example-grid {
-//     display: grid;
-// 	grid-gap: $gutter;
-// 	grid-template-columns: 1fr 1fr;
-// 	grid-template-areas: "left right";
-// 	> div:first-child
-// 		grid-area: left;
-// 	> div:last-child
-// 		grid-area: right
-// 	+media-breakpoint-down(xs)
-// 		display: block;
-// 		> div
-// 			padding: $gutter/2 0;
-// }
-	
-	
-// .example-img {
-//     width: 100%;
-// }
-	
-
-// .parent {
-//     background-image: url'(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)';
-// } // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
