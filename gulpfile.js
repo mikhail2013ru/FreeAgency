@@ -56,10 +56,11 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/js__src/init.js',
+		'app/libs/js__src/main.js',
+		'app/libs/js__src/common.js',
 		'app/libs/js__src/form.js',
 		'app/libs/js__src/validation.js',
-		'app/libs/js__src/navigation.js',
-		'app/libs/js__src/main.js'
+		'app/libs/js__src/navigation.js'
 		])
 	.pipe(sourcemaps.init())
 	.pipe(concat('scripts.min.js'))
@@ -67,6 +68,17 @@ gulp.task('scripts', function() {
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest('app/js/'))
 	.pipe(browserSync.reload({ stream: true }));
+});
+
+//JS:Libraries
+gulp.task('JS:Libraries', function() {
+	return gulp.src([
+		//'app/libs/jquery/jquery-3.4.1.min.js',
+		//'app/libs/wow/wow.min.js'
+		])
+	.pipe(sourcemaps.init())
+	.pipe(sourcemaps.write())
+	.pipe(gulp.dest('app/js/'));
 });
 
 /* Sprite */
