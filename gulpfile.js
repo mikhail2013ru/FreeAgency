@@ -85,7 +85,7 @@ gulp.task('JS:Libraries', function() {
 gulp.task('sprite', function(cb) {
 	const spriteData = gulp.src('app/img/icons/*.png').pipe(spritesmith({
 		imgName: 'sprite.png',
-		imgPath: '/sprites/sprite.png',
+		imgPath: '../sprites/sprite.png',
 		cssName: '_sprite.scss'
 	}));
 
