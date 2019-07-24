@@ -1,0 +1,20 @@
+section.form-section
+    .container
+        .title
+            h2.title.title__header Get Tour Free Facebook Analysits Now
+            .title__text Enter your details below
+        
+        .btn-down: a.arrow-down(href="form.html" target="_blank"): i.fa.fa-angle-down
+
+        .form-container.is-hidden
+            form(method="post" action="#").form
+                button(type="button").form__close-button x
+                .form__text.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde culpa vel doloremque, odit explicabo.
+                
+                .form__fields
+                    input.form__input(type="text" placeholder="Your Name" data-valid="required")
+                    input.form__input(type="email" placeholder="Email" data-valid="required" data-email)
+                    input.form__input(type="text" placeholder="Contact Number" data-valid="required" data-number)
+                
+                button(type="submit").button--text-uppercase.button.button--red Submit now

@@ -13,6 +13,8 @@
 @import "sections/button";
 @import "sections/approach";
 @import "sections/work";
+@import "sections/form";
+@import "sections/footer";
 
 ::placeholder {
     color: #666;
@@ -50,6 +52,10 @@ body {
 
 html {
     box-sizing: border-box;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+    }
 }
 
 *, *:before, *:after {
@@ -72,4 +78,13 @@ ol {
 .container {
     max-width: 1024px;
     margin: auto;
+}
+
+.is-hidden {
+    display: none!important;
+}
+
+.visually-hidden {
+    text-indent: -9999px;
+    font-size: 0;
 }
