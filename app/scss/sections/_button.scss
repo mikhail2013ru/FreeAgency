@@ -14,16 +14,16 @@
         }
     }
 
-    &--yellow {
-        color: #fff;
-        background: #f8cd53;
+    // &--yellow {
+    //     color: #fff;
+    //     background: #f8cd53;
 
-        &:hover {
-            background: lighten(#f8cd53, 7%);
-        }
-    }
+    //     &:hover {
+    //         background: lighten(#f8cd53, 7%);
+    //     }
+    // }
 
-    &--text-uppercase {
-        text-transform: uppercase;
-    }
+    // &--text-uppercase {
+    //     text-transform: uppercase;
+    // }
 }

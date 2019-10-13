@@ -43,12 +43,20 @@
         padding-top: 7px;
         border-right: 1px solid #e2e2e2;
         font-size: 1rem;
+        @media (max-width: 320px) {
+            border-right: none;
+        }
     }
 
     &__icon {
         margin-right: 7px;
         vertical-align: middle;
         font-size: 1.7rem;
+
+        &--skype {
+            font-size: 1.5rem;
+            color: #1287bf;
+        }
 
         &--email {
             font-size: 1.2rem;

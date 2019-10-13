@@ -23,9 +23,12 @@
     &__item {
         margin-bottom: 40px;
         border-radius: 5px;
-        box-shadow: -1px -1px 10px 1px rgba(214,214,214,1);
         color: #424242;
         background: #fff;
+        transition: 1.2s;
+        &:hover {
+            box-shadow: -1px -1px 10px 5px rgba(214,214,214,1);
+        }
 
         @media (max-width: 985px) {
             padding: 25px 20px;
